@@ -140,11 +140,11 @@
 char dir_reversed = 0;
 char comp_pwm = 1;
 char VARIABLE_PWM = 1;
-char bi_direction = 0;
+char bi_direction = 1;
 char stuck_rotor_protection = 0;	// Turn off for Crawlers
 char brake_on_stop = 1;
 char stall_protection = 1;
-char use_sin_start = 0;
+char use_sin_start = 1;
 char THIRTY_TWO_MS_TLM = 0;
 
 char advance_level = 7.5;			// 7.5 degree increments 0 , 7.5, 15, 22.5)
