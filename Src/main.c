@@ -141,28 +141,28 @@ char dir_reversed = 0;
 char comp_pwm = 1;
 char VARIABLE_PWM = 1;
 char bi_direction = 0;
-char stuck_rotor_protection = 1;	// Turn off for Crawlers
-char brake_on_stop = 0;
-char stall_protection = 0;
+char stuck_rotor_protection = 0;	// Turn off for Crawlers
+char brake_on_stop = 1;
+char stall_protection = 1;
 char use_sin_start = 0;
 char THIRTY_TWO_MS_TLM = 0;
 
-char advance_level = 2;			// 7.5 degree increments 0 , 7.5, 15, 22.5)
-uint16_t motor_kv = 2000;
+char advance_level = 7.5;			// 7.5 degree increments 0 , 7.5, 15, 22.5)
+uint16_t motor_kv = 2050;
 char motor_poles = 14;
-//add Startup Power
-//Add PWM Frequency
-//Add Beep Volume
+add Startup Power
+Add PWM Frequency
+Add Beep Volume
 char drag_brake_strength = 10;		// Drag Brake Power
-char sine_mode_changeover_thottle_level = 5;	// Sine Startup Range
+char sine_mode_changeover_thottle_level = 20;	// Sine Startup Range
 
 char USE_HALL_SENSOR = 0;
 
 //============================= Servo Settings ==============================
 uint16_t servo_low_threshold = 1100;	// anything below this point considered 0
 uint16_t servo_high_threshold = 1900;	// anything above this point considered 2000 (max)
-uint16_t servo_neutral = 1500;
-uint8_t servo_dead_band = 100;
+uint16_t servo_neutral = 1450;
+uint8_t servo_dead_band = 50;
 
 //========================= Battery Cuttoff Settings ========================
 char LOW_VOLTAGE_CUTOFF = 0;		// Turn Low Voltage CUTOFF on or off
